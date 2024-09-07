@@ -1,0 +1,385 @@
+*,
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: url(https://putra-00-a11y.github.io/CXProjects.github.io/assets/horizontalBGLogin.png);
+    background-repeat: no-repeat;
+    image-rendering: optimizeQuality;
+    background-size: cover;
+    background-position: left;
+    animation-name: imgAnimate;
+    animation-duration: 40s;
+    animation-delay: .5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes imgAnimate {
+    0% {
+        background-position: left;
+    }
+
+    50% {
+        background-position: right;
+    }
+
+    100% {
+        background-position: left;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    color: black;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    color: black;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    color: black;
+}
+
+#headerTitle {
+    position: absolute;
+    top: 25px;
+    background: none;
+    color: black;
+    font-size: 3.2em;
+    font-family: 'Gill Sans';
+    font-weight: 600;
+    font-style: normal;
+    font-variant: normal;
+    cursor: default;
+    opacity: 80%;
+    filter: drop-shadow(0 0 4px
+    black);
+    animation-name: text0HeadAnimate;
+    animation-duration: .8s;
+    animation-delay: 200ms;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    transform: translateY(0px);
+}   
+
+@keyframes text0HeadAnimate {
+    from {
+        transform: translateY(-11px);
+        opacity: 0%;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 85%;
+    }
+}
+
+#headerP {
+    position: absolute;
+    top: 71px;
+    background: none;
+    color: black;
+    font-size: .9em;
+    font-family: Arial;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    cursor: default;
+    opacity: 60%;
+    filter: drop-shadow(0 0 2px
+    black);
+    animation-name: text00HeadAnimate;
+    animation-duration: 6s;
+    animation-delay: 200ms;
+    animation-timing-function: linear;
+    animation-direction: normal;
+}
+@keyframes text00HeadAnimate {
+    from {
+        opacity: 0%;
+        transform: scale(.5);
+    }
+
+    to {
+        opacity: 60%;
+        transform: scale(1);
+    }
+}
+
+form {
+    position: absolute;
+    top: 180px;
+    width: 270px;
+    height: 375px;
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    border-top-left-radius: 25% 20%;
+    border-top-right-radius: 25% 20%;
+    border-bottom-left-radius: 5% 5%;
+    border-bottom-right-radius: 5% 5%;
+    opacity: 90%;
+    cursor: default;
+    filter: drop-shadow(0 0 4px
+    black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imgClass0 {
+    position: absolute;
+    top: 9px;
+    width: 100px;
+    height: 100px;
+    background: none;
+    opacity: 80%;
+    cursor: default;
+}
+
+#pUsers {
+    position: absolute;
+    top: 106px;
+    background: none;
+    color: black;
+    font-size: 1em;
+    font-family: 'Lucida Sans';
+    font-weight: 600;
+    font-style: normal;
+    font-variant: normal;
+    opacity: 70%;
+    cursor: default;
+}
+
+#pUsers::before,
+#pUsers::after {
+    content: " :: ";
+    position: relative;
+    top: -1px;
+    font-weight: bold;
+    opacity: 85%;
+}
+
+#tagNameData {
+    position: absolute;
+    top: 145px;
+    background-color: lightgrey;
+    color: black;
+    width: 170px;
+    height: 25px;
+    font-size: 1em;
+    font-family: 'Courier New';
+    font-weight: 500;
+    font-style: normal;
+    font-variant: normal;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    opacity: 65%;
+    text-align: center;
+}
+
+#tagNameData:hover {
+    transition: 200ms ease-in-out;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+    background-color: lightblue;
+    color: blue;
+    opacity: 70%;
+    border: 1px solid transparent;
+    width: 160px;
+}
+
+#loginData {
+    position: absolute;
+    top: 210px;
+    background-color: lightgrey;
+    color: black;
+    width: 170px;
+    height: 25px;
+    font-size: 1em;
+    font-family: 'Courier New';
+    font-weight: 500;
+    font-style: normal;
+    font-variant: normal;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    opacity: 65%;
+    text-align: center;
+}
+
+#loginData:hover {
+    transition: 200ms ease-in-out;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+    background-color: lightblue;
+    color: blue;
+    opacity: 70%;
+    border: 1px solid transparent;
+    width: 160px;
+}
+
+#passData {
+    position: absolute;
+    top: 250px; 
+    background-color: lightgrey;
+    color: black;
+    width: 170px;
+    height: 25px;
+    font-size: 1em;
+    font-family: 'Courier New';
+    font-weight: 500;
+    font-style: normal;
+    font-variant: normal;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    opacity: 65%;
+    text-align: center;
+}
+
+#passData:hover {
+    transition: 200ms ease-in-out;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+    background-color: lightblue;
+    color: blue;
+    opacity: 70%;
+    border: 1px solid transparent;
+    width: 160px;
+}
+
+#submitData {
+    position: absolute;
+    top: 305px;
+    padding: 4px;
+    border: 1px solid lightgrey;
+    border-radius: 7px;
+    background-color: lightgrey;
+    font-size: 1em;
+    font-family: Georgia;
+    font-weight: 500;
+    font-style: normal;
+    font-variant: normal;
+    opacity: 80%;
+    cursor: pointer;
+}
+
+#submitData:hover {
+    transition: 200ms ease-in-out;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+    background-color: black;
+    color: white;
+    padding: 3px;
+    opacity: 70%;
+}
+
+#pDefensive {
+    position: absolute;
+    top: 280px;
+    left: 48px;
+    background: none;
+    color: black;
+    font-size: .7em;
+    font-family: 'Segoe UI';
+    font-weight: 500;
+    font-style: normal;
+    font-variant: normal;
+    opacity: 80%;
+    cursor: default;
+}
+
+#aDefends {
+    background: none;
+    color: blue;
+    font-size: 1.1em;
+    font-family: Arial;
+    font-weight: 600;
+    font-style: italic;
+    font-variant: normal;
+    text-decoration: none;
+    opacity: 80%;
+    cursor: pointer;
+}
+
+#aDefends:hover {
+    transition: 200ms ease-in-out;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+    color: purple;
+    text-decoration: underline;
+}
+
+#pVer {
+    position: fixed;
+    bottom: 2px;
+    background: none;
+    color: black;
+    font-size: smaller;
+    font-family: 'Lucida Sans';
+    font-weight: 400;
+    font-style: oblique;
+    font-variant: normal;
+    opacity: 65%;
+    cursor: default;
+}
+
+#pFooter {
+    position: fixed;
+    bottom: 10px;
+    background: none;
+    color: white;
+    font-size: 1.1em;
+    font-family: Cambria;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    opacity: 60%;
+    cursor: default;
+    animation-name: pAnimateFooter;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes pAnimateFooter {
+    from {
+        opacity: 60%;
+    }
+
+    to {
+        opacity: 0%;
+    }
+}
+
+#spanSubmit0 {
+    display: block;
+    color: white;
+}
+
+#spanSubmit0 {
+    display: block;
+    color: white;
+}
+
+#spanSubmit1 {
+    display: none;
+}

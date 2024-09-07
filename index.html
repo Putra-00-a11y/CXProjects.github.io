@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>XII-7 Login</title>
+        <link rel="stylesheet" href="styles/styleLogin.css">
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header id="header0">
+            <h1 id="headerTitle">Welcome!</h1>
+            <p id="headerP">[ XII-7 ]</p>
+        </header>
+        <!-- HEADER END -->
+
+        <!-- CONTENTS -->
+        <main>
+            <form id="form0">
+                <img src="assets/ClassXII-7.png" alt="class_Building"
+                    id="imgClass0">
+                <p id="pUsers">User</p>
+                <input type="text" placeholder="Your Nickname" minlength="5" maxlength="8" id="tagNameData"
+                    required>
+                <hr style="width: 110px;" />
+                <input type="text" placeholder="User'S" id="loginData" required>
+                <input type="password" placeholder="Password" id="passData"
+                    required>
+                <p id="pDefensive">#Our<a href="#" id="aDefends">Terms</a>&<a
+                        href="#" id="aDefends">Privacy</a></p>
+                <button type="button" onclick="submitData0()" id="submitData">
+                    <span id="spanSubmit0">-LOGIN-</span>
+                    <span id="spanSubmit1">Wait..</span>
+                </button>
+                <p id="pVer">0.0.1Ver</p>
+            </form>
+            
+            <div id="alertForm0">
+
+            </div>
+
+            <div id="loadingForm0">
+
+            </div>
+        </main>
+        <!-- CONTENTS END -->
+
+        <!-- FOOTER -->
+        <footer id="footer0">
+            <p id="pFooter">Hello There!!, Selamat Datang di XII-7, Silakan Isi
+                [User's] & [Password] Sesuai Yang Ditentukan. Salam Hangat
+                XII-7!.</p>
+        </footer>
+        <!-- FOOTER END -->
+
+        <script src="scripts/dataLogin.js"></script>
+    </body>
+</html>
