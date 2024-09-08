@@ -13,6 +13,7 @@ let loading = document.getElementById("loadingForm0");
 let loading0 = document.getElementById("spanSubmit0");
 let loading1 = document.getElementById("spanSubmit1");
 
+    // Pengosongan Ketika Berada Dalam Form Dengan Waktu Yang Lama
     caution.style.display = "none";
     document.getElementById("tagNameData").value = "";
     document.getElementById("loginData").value = "";
@@ -44,9 +45,10 @@ function submitData0() {
     window.location.assign = "file.html";
     window.location.assign = "hall.html";
     window.location.assign = "admin.html";
+    window.location.assign = "index.html";
 
     // Pengolahan dan Pengecekan Setelah Input di-Isi
-    if (name == name && username == "XII-7 Class" && password == "RegSevelSeven7") {
+    if (name == name && username == "XII-7-CXP" && password == "RSSCXP-7") {
         console.log('Input Data Username : ', username);
         console.log('Input Data Password : ', password);
         console.log('The Inputs Means Direction to Users..');
@@ -58,7 +60,7 @@ function submitData0() {
             window.location.href = "hall.html";
         }, 5000);
     }
-    else if (name == name && username == "XII-7 Admin" && password == "RegSevelAdmin0") {
+    else if (name == name && username == "XII-7-CXPA" && password == "RSSCXPA-0") {
         console.log('Input Data Username : ', username);
         console.log('Input Data Password : ', password);
         console.log('The Inputs Means Direction to Admin..');
@@ -66,7 +68,7 @@ function submitData0() {
             window.location.href = "admin.html";
         }, 2500);
     }
-    else if (name  == "EyesFile" && username == "file" && password == "XfileX") {
+    else if (name == "EyesFile" && username == "file" && password == "XfileX") {
         console.log('Input Data Name : ', name);
         console.log('Input Data Username : ', username);
         console.log('Input Data Password : ', password);
@@ -102,7 +104,23 @@ function submitData0() {
         }, 3700);
     }
     else if (localStorage.getItem("dataName") == "XII-7 Admin" && localStorage.getItem("dataPass") == "RegSevelAdmin0") {
-
+        console.log('Login System..');
+        setTimeout(() => {
+            form.style.display = "none";
+            footer.style.display = "none";
+        }, 3700);
     };
+};
+
+// Implementasi Tombol Kembali Ke Form
+function buttonPrivacy0() {
+
+    window.location.assign = "index.html";
+    setTimeout(() => {
+        alert('');
+        console.log('Back To Form..');
+        window.location.href = "index.html";
+    }, 1500);
+
 };
 // AKHIR SCRIPT KODE JAVASCRIPT
