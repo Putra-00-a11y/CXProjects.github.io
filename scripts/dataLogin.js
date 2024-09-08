@@ -13,6 +13,11 @@ let loading = document.getElementById("loadingForm0");
 let loading0 = document.getElementById("spanSubmit0");
 let loading1 = document.getElementById("spanSubmit1");
 
+    caution.style.display = "none";
+    document.getElementById("tagNameData").value = "";
+    document.getElementById("loginData").value = "";
+    document.getElementById("passData").value = "";
+
 // Implementasi Peringatan Keamanan Form Sementara
 setInterval(() => {
     console.log('Caution Form Sending..');
@@ -45,11 +50,13 @@ function submitData0() {
         console.log('Input Data Username : ', username);
         console.log('Input Data Password : ', password);
         console.log('The Inputs Means Direction to Users..');
-        loading0.style.display = "none";
-        loading1.style.display = "block";
+        setTimeout(() => {
+            loading0.style.display = "none";
+            loading1.style.display = "block";
+        }, 700);
         setTimeout(() => {
             window.location.href = "hall.html";
-        }, 2500);
+        }, 5000);
     }
     else if (name == name && username == "XII-7 Admin" && password == "RegSevelAdmin0") {
         console.log('Input Data Username : ', username);
@@ -89,6 +96,10 @@ function submitData0() {
     // Implementasi di-Saat LocalStorage Memiliki Suatu Value Yang Benar
     if (localStorage.getItem("dataName") == "XII-7 Class" && localStorage.getItem("dataPass") == "RegSevelSeven7") {
         console.log('Login System..'); 
+        setTimeout(() => {
+            form.style.display = "none";
+            footer.style.display = "none";
+        }, 3700);
     }
     else if (localStorage.getItem("dataName") == "XII-7 Admin" && localStorage.getItem("dataPass") == "RegSevelAdmin0") {
 

@@ -17,8 +17,8 @@
         <!-- CONTENTS -->
         <main>
             <form id="form0">
-                <img src="assets/ClassXII-7.png" alt="class_Building"
-                    id="imgClass0">
+                <img src="assets/ClassXII-7.png" alt="class_building"
+                    id="imgClass0" loading="lazy">
                 <p id="pUsers">User</p>
                 <input type="text" placeholder="Your Nickname" minlength="5" maxlength="8" id="tagNameData"
                     required>
@@ -26,17 +26,21 @@
                 <input type="text" placeholder="User'S" id="loginData" required>
                 <input type="password" placeholder="Password" id="passData"
                     required>
-                <p id="pDefensive">#Our<a href="#" id="aDefends">Terms</a>&<a
-                        href="#" id="aDefends">Privacy</a></p>
+                <p id="pDefensive">#Our<a href="terms.html" id="aDefends">Terms</a>&<a
+                        href="privacy.html" id="aDefends">Privacy</a></p>
                 <button type="button" onclick="submitData0()" id="submitData">
                     <span id="spanSubmit0">-LOGIN-</span>
-                    <span id="spanSubmit1">Wait..</span>
+                    <span id="spanSubmit1">Waiting..</span>
                 </button>
                 <p id="pVer">0.0.1Ver</p>
             </form>
             
             <div id="alertForm0">
-
+                <h2 id="h2TextAlert">REFRESH IT!</h2>
+                <img src="assets/CircleAnimate.png" alt="reload_page" loading="lazy" id="reloadingPage">
+                <p id="pReloading">Anda Terlalu Lama Di Dalam Form Sehingga <strong>Keamanan Diterapkan</strong><br />
+                    <hr style="width: 100px; margin: 0; padding: 0;" />
+                    <br /><i>>Refresh Halaman<</i> Untuk Memuat Ulang kembali</p>
             </div>
 
             <div id="loadingForm0">
