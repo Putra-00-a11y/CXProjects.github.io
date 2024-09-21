@@ -1,7 +1,7 @@
 // AWAL SCRIPT KODE JAVASCRIPT
 console.log('Hello Developer!');
 console.log('Welcoming for Putra!');
-let name = document.getElementById("tagNameData");
+let name = document.getElementById("tagNmeData");
 let username = document.getElementById("loginData");
 let password = document.getElementById("passData");
 let submit = document.getElementById("submitData");
@@ -13,11 +13,11 @@ let loading = document.getElementById("loadingForm0");
 let loading0 = document.getElementById("spanSubmit0");
 let loading1 = document.getElementById("spanSubmit1");
 
-    // Pengosongan Ketika Berada Dalam Form Dengan Waktu Yang Lama
-    caution.style.display = "none";
-    document.getElementById("tagNameData").value = "";
-    document.getElementById("loginData").value = "";
-    document.getElementById("passData").value = "";
+// Pengosongan Ketika Berada Dalam Form Dengan Waktu Yang Lama
+caution.style.display = "none";
+document.getElementById("tagNameData").value = "";
+document.getElementById("loginData").value = "";
+document.getElementById("passData").value = "";
 
 // Implementasi Peringatan Keamanan Form Sementara
 setInterval(() => {
@@ -31,7 +31,7 @@ setInterval(() => {
 
 // Fungsi Pada Tombol Submit di-Form
 function submitData0() {
-    
+
     // Menentukan Value di-Saat Input di-Isi
     let name = document.getElementById("tagNameData").value;
     let username = document.getElementById("loginData").value;
@@ -56,17 +56,33 @@ function submitData0() {
             loading0.style.display = "none";
             loading1.style.display = "block";
         }, 700);
+        if (name == "") {
+            const guest1 = "Guest";
+            let name = document.getElementById("tagNameData").value = guest1;
+            console.log(guest1);
+        };
         setTimeout(() => {
-            window.location.href = "hall.html";
-        }, 5000);
+            window.location.href = "admin.html";
+            console.log('Login Admin Successfully!');
+        }, 3100);
     }
     else if (name == name && username == "XII-7-CXPA" && password == "RSSCXPA-0") {
         console.log('Input Data Username : ', username);
         console.log('Input Data Password : ', password);
         console.log('The Inputs Means Direction to Admin..');
         setTimeout(() => {
+            loading0.style.display = "none";
+            loading1.style.display = "block";
+        }, 700);
+        if (name == "") {
+            const guest1 = "Guest";
+            let name = document.getElementById("tagNameData").value = guest1;
+            console.log(guest1);
+        };
+        setTimeout(() => {
             window.location.href = "admin.html";
-        }, 2500);
+            console.log('Login Admin Successfully!');
+        }, 3100);
     }
     else if (name == "EyesFile" && username == "file" && password == "XfileX") {
         console.log('Input Data Name : ', name);
@@ -77,7 +93,7 @@ function submitData0() {
             window.location.href = "file.html";
         }, 2500);
     }
-    else if (name == "" && username == "" && password == "") {
+    else if (username == "" && password == "") {
         console.log('The Inputs Was Blank..');
         setTimeout(() => {
             alert('Fill The Blank Inputs..');
@@ -87,7 +103,7 @@ function submitData0() {
     else {
         console.log('The user / password Was Wrong..');
         setTimeout(() => {
-            alert ('Fill The [user]/[password] With The Right Data!');
+            alert('Fill The [user]/[password] With The Right Data!');
             document.getElementById("tagNameData").value = "";
             document.getElementById("loginData").value = "";
             document.getElementById("passData").value = "";
@@ -97,7 +113,7 @@ function submitData0() {
 
     // Implementasi di-Saat LocalStorage Memiliki Suatu Value Yang Benar
     if (localStorage.getItem("dataName") == "XII-7 Class" && localStorage.getItem("dataPass") == "RegSevelSeven7") {
-        console.log('Login System..'); 
+        console.log('Login System..');
         setTimeout(() => {
             form.style.display = "none";
             footer.style.display = "none";
@@ -112,15 +128,25 @@ function submitData0() {
     };
 };
 
-// Implementasi Tombol Kembali Ke Form
+// Implementasi Tombol Kembali Ke Form (privacy)
 function buttonPrivacy0() {
 
     window.location.assign = "index.html";
     setTimeout(() => {
-        alert('');
         console.log('Back To Form..');
         window.location.href = "index.html";
     }, 1500);
 
+};
+
+// Implementasi Tombol Kembali ke Form (privacy_content)
+function buttonBackPrivacy0() {
+
+    window.location.assign = "privacy.html";
+
+    setTimeout(() => {
+        console.log('Back To Privacy..');
+        window.location.href = "privacy.html";
+    }, 1500);
 };
 // AKHIR SCRIPT KODE JAVASCRIPT

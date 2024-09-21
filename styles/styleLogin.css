@@ -217,6 +217,7 @@ form {
     border-radius: 4px;
     opacity: 65%;
     text-align: center;
+    outline: none;
 }
 
 #tagNameData:hover {
@@ -246,6 +247,7 @@ form {
     border-radius: 4px;
     opacity: 65%;
     text-align: center;
+    outline: none;
 }
 
 #loginData:hover {
@@ -275,6 +277,7 @@ form {
     border-radius: 4px;
     opacity: 65%;
     text-align: center;
+    outline: none;
 }
 
 #passData:hover {
