@@ -15,19 +15,18 @@
         <!-- HEADER END -->
 
         <!-- CONTENTS -->
-        <main></main>
+        <main>
             <form id="form0">
                 <img src="assets/ClassXII-7.png" alt="class_building"
                     id="imgClass0" loading="lazy">
-                <p id="pUsers">User</p>
-                <input type="text" placeholder="Your Nickname" minlength="5" maxlength="8" id="tagNameData"
+                <p id="pUsers">User</p><input type="text" placeholder="Your Nickname" minlength="5" maxlength="8" id="tagNameData"
                     required>
                 <hr style="width: 110px;" />
                 <input type="text" placeholder="User'S" id="loginData" required>
                 <input type="password" placeholder="Password" id="passData"
                     required>
                 <p id="pDefensive">#Our<a href="terms.html" id="aDefends">Terms</a>&<a
-                        href="privacy.html" id="aDefends">Privacy</a></p>
+                    href="privacy.html" id="aDefends">Privacy</a></p>
                 <button type="button" onclick="submitData0()" id="submitData">
                     <span id="spanSubmit0">-LOGIN-</span>
                     <span id="spanSubmit1">Waiting..</span>
@@ -38,7 +37,7 @@
             <div id="alertForm0">
                 <h2 id="h2TextAlert">REFRESH IT!</h2>
                 <img src="assets/CircleAnimate.png" alt="reload_page" loading="lazy" id="reloadingPage">
-                <p id="pReloading">Anda Terlalu Lama Di Dalam Form Sehingga <strong>Keamanan Diterapkan</strong><br />
+                <p id="pReloading">Anda Terlalu Lama Di Dalam Form  Sehingga <strong>Keamanan Diterapkan</strong><br />
                     <hr style="width: 100px; margin: 0; padding: 0;" />
                     <br /><i>>Refresh Halaman<</i> Untuk Memuat Ulang kembali</p>
             </div>
@@ -55,6 +54,10 @@
                 [User's] & [Password] Sesuai Yang Ditentukan. Salam Hangat
                 XII-7!.</p>
         </footer>
+
+        <div id="loadingWrap">
+            <div id="loader"></div>
+        </div>
         <!-- FOOTER END -->
 
         <script src="scripts/reCaptha.js"></script>

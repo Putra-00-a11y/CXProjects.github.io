@@ -12,6 +12,7 @@ let caution = document.getElementById("alertForm0");
 let loading = document.getElementById("loadingForm0");
 let loading0 = document.getElementById("spanSubmit0");
 let loading1 = document.getElementById("spanSubmit1");
+let loading3 = document.getElementById("loader");
 
 // Pengosongan Ketika Berada Dalam Form Dengan Waktu Yang Lama
 caution.style.display = "none";
@@ -27,7 +28,7 @@ setInterval(() => {
     footer.style.display = "none";
     loading.style.display = "none";
     caution.style.display = "block";
-}, 30000);
+}, 45000);
 
 // Fungsi Pada Tombol Submit di-Form
 function submitData0() {
@@ -62,8 +63,14 @@ function submitData0() {
             console.log(guest1);
         };
         setTimeout(() => {
-            window.location.href = "admin.html";
-            console.log('Login Admin Successfully!');
+            console.log('Loader Loading Sedang Berjalan..');
+            loading3.style.opacity = "1";
+            form.style.display = "none";
+            caution.style.opacity = "0";
+            setTimeout(() => {
+                window.location.href = "hall.html";
+                console.log('Login Hall Successfully!');
+            }, 9000);
         }, 3100);
     }
     else if (name == name && username == "XII-7-CXPA" && password == "RSSCXPA-0") {
@@ -80,8 +87,14 @@ function submitData0() {
             console.log(guest1);
         };
         setTimeout(() => {
-            window.location.href = "admin.html";
-            console.log('Login Admin Successfully!');
+            console.log('Loader Loading Sedang Berjalan..');
+            loading3.style.opacity = "1";
+            form.style.display = "none";
+            caution.style.opacity = "0";
+            setTimeout(() => {
+                window.location.href = "admin.html";
+                console.log('Login Admin Successfully!');
+            }, 9000);
         }, 3100);
     }
     else if (name == "EyesFile" && username == "file" && password == "XfileX") {
@@ -149,4 +162,7 @@ function buttonBackPrivacy0() {
         window.location.href = "privacy.html";
     }, 1500);
 };
+
+// Penempatan Loader Loading Pada FOrm Login
+loading3.style.opacity = "0";
 // AKHIR SCRIPT KODE JAVASCRIPT
