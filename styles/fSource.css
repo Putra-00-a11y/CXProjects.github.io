@@ -205,6 +205,7 @@ table:hover {
     color: aqua;
     text-decoration: underline;
     opacity: 90%;
+    cursor: wait;
 }
 
 .htmlA {
@@ -227,6 +228,7 @@ table:hover {
     color: lightcoral;
     text-decoration: underline;
     opacity: 90%;
+    cursor: wait;
 }
 
 .jsA {
@@ -249,4 +251,5 @@ table:hover {
     color: yellow;
     text-decoration: underline;
     opacity: 90%;
+    cursor: wait;
 }
