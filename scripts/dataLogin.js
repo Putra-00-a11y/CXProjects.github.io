@@ -13,6 +13,8 @@ let loading = document.getElementById("loadingForm0");
 let loading0 = document.getElementById("spanSubmit0");
 let loading1 = document.getElementById("spanSubmit1");
 let loading3 = document.getElementById("loader");
+let loading4 = document.getElementById("loader1");
+let Loader = document.getElementById("h2Loader");
 
 // Pengosongan Ketika Berada Dalam Form Dengan Waktu Yang Lama
 caution.style.display = "none";
@@ -50,6 +52,7 @@ function submitData0() {
 
     // Pengolahan dan Pengecekan Setelah Input di-Isi
     if (name == name && username == "XII-7-CXP" && password == "RSSCXP-7") {
+        console.log('Input Data Name : ', name);
         console.log('Input Data Username : ', username);
         console.log('Input Data Password : ', password);
         console.log('The Inputs Means Direction to Users..');
@@ -61,12 +64,15 @@ function submitData0() {
             const guest1 = "Guest";
             let name = document.getElementById("tagNameData").value = guest1;
             console.log(guest1);
+            localStorage.setItem("dataUser", "Guest");
         };
-        setTimeout(() => {
+        setTimeout(  () => {
             console.log('Loader Loading Sedang Berjalan..');
             loading3.style.opacity = "1";
             form.style.display = "none";
             caution.style.opacity = "0";
+            Loader.style.display = "block";
+            document.getElementById("h2Loader").innerHTML = `<div>HI, ${localStorage.getItem("dataUser")}!</div>`;
             setTimeout(() => {
                 window.location.href = "hall.html";
                 console.log('Login Hall Successfully!');
@@ -85,26 +91,48 @@ function submitData0() {
             const guest1 = "Guest";
             let name = document.getElementById("tagNameData").value = guest1;
             console.log(guest1);
+            localStorage.setItem("dataUser", "Guest");
         };
         setTimeout(() => {
             console.log('Loader Loading Sedang Berjalan..');
             loading3.style.opacity = "1";
             form.style.display = "none";
             caution.style.opacity = "0";
+            Loader.style.display = "block";
+            document.getElementById("h2Loader").innerHTML = `<div>HI, ${localStorage.getItem("dataUser")}!</div>`;
             setTimeout(() => {
                 window.location.href = "admin.html";
                 console.log('Login Admin Successfully!');
             }, 9000);
         }, 3100);
     }
-    else if (name == "EyesFile" && username == "file" && password == "XfileX") {
+    else if (name == name && username == "file source" && password == "XfileX") {
         console.log('Input Data Name : ', name);
         console.log('Input Data Username : ', username);
         console.log('Input Data Password : ', password);
         console.log('The Inputs Means Direction to File..');
         setTimeout(() => {
-            window.location.href = "file.html";
-        }, 2500);
+            loading0.style.display = "none";
+            loading1.style.display = "block";
+        }, 700);
+        if (name == "") {
+            const xFilex = "FileTech";
+            let name = document.getElementById("tagNameData").value = xFilex;
+            console.log(xFilex);
+            localStorage.setItem("dataUser", "FileTech");
+        };
+        setTimeout(() => {
+            console.log('Loader Loading Sedang Berjalan..');
+            loading4.style.opacity = "1";
+            form.style.display = "none";
+            caution.style.opacity = "0";
+            Loader.style.display = "block";
+            document.getElementById("h2Loader").innerHTML = `<div>HI, ${localStorage.getItem("dataUser")}!</div>`;
+            setTimeout(() => {
+                window.location.href = "file.html";
+                console.log('Login FIleTech Successfully!');
+            }, 13000);
+        }, 3100);
     }
     else if (username == "" && password == "") {
         console.log('The Inputs Was Blank..');
@@ -125,18 +153,20 @@ function submitData0() {
     };
 
     // Implementasi di-Saat LocalStorage Memiliki Suatu Value Yang Benar
-    if (localStorage.getItem("dataName") == "XII-7 Class" && localStorage.getItem("dataPass") == "RegSevelSeven7") {
+    if (localStorage.getItem("dataName") == "XII-7-CXP" && localStorage.getItem("dataPass") == "RSSCXP-7") {
         console.log('Login System..');
         setTimeout(() => {
             form.style.display = "none";
             footer.style.display = "none";
+            console.log('Sistem Login Masuk Peserta Berjalan Dengan Baik!');
         }, 3700);
     }
-    else if (localStorage.getItem("dataName") == "XII-7 Admin" && localStorage.getItem("dataPass") == "RegSevelAdmin0") {
+    else if (localStorage.getItem("dataName") == "XII-7-CXPA" && localStorage.getItem("dataPass") == "RSSCXPA-0") {
         console.log('Login System..');
         setTimeout(() => {
             form.style.display = "none";
             footer.style.display = "none";
+            console.log('Sistem Login Masuk Admin Berjalan Dengan Baik!');
         }, 3700);
     };
 };
@@ -163,6 +193,12 @@ function buttonBackPrivacy0() {
     }, 1500);
 };
 
-// Penempatan Loader Loading Pada FOrm Login
+// Penempatan Loader Loading 1 Pada Form Login
+loading4.style.opacity = "0";
+
+// Penempatan Loader Loading 2 Pada Form Login
 loading3.style.opacity = "0";
-// AKHIR SCRIPT KODE JAVASCRIPT
+
+// Penempatan Loader Nama Pada Form Login
+Loader.style.display = "none";
+// AKHIR SCRIPT KODE JAVASCRIPT 

@@ -663,6 +663,10 @@ form {
     filter: drop-shadow(0 0 4px
     black);
     animation: l2 2s infinite linear;
+    z-index: -11;
+    opacity: 85%;
+    filter: drop-shadow(0 0 2px
+    white);
 }
 
 #loader:before,
@@ -681,4 +685,58 @@ form {
 
 @keyframes l2 {
     100% {transform:rotate(calc(var(--s,1)*1turn))}
+}
+
+#h2Loader {
+    position: absolute;
+    top: 235px;
+    background: none;
+    color: white;
+    font-size: 2.7em;
+    font-family: 'Times New Roman';
+    font-weight: 600;
+    font-style: normal;
+    font-variant: normal;
+    cursor: default;
+    opacity: 80%;
+    filter: drop-shadow(0 0 4px
+    white);
+    animation-name: nameAnimateLoader;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-direction: normal;
+}
+
+@keyframes nameAnimateLoader {
+    from {
+        opacity: 0%;
+    }
+    
+    to {
+        opacity: 80%;
+    }
+}
+
+#loader1 {
+    position: absolute;
+    width: 75px;
+    aspect-ratio: 1;
+    --g1:conic-gradient(from  90deg at 2px  2px ,#0000 90deg,#fff 0);
+    --g2:conic-gradient(from -90deg at 13px 13px,#0000 90deg,#fff 0);
+    background:
+        var(--g1),var(--g1),var(--g1),var(--g1),var(--g1),var(--g1),var(--g1),var(--g1),
+        var(--g2),var(--g2),var(--g2),var(--g2),var(--g2),var(--g2),var(--g2),var(--g2);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    animation: l9 1s infinite alternate linear;
+    z-index: -10;
+    opacity: 85%;
+    filter: drop-shadow(0 0 2px
+    white);
+}
+
+@keyframes l9 {
+    0%,30% {background-position:0 0,50% 0,100% 0,0 50%,100% 50%,0 100%,50% 100%,100% 100%}
+    70%,100% {background-position:15% 15%,50% 0,85% 15%,0 50%,100% 50%,15% 85%,50% 100%,85% 85%}
 }

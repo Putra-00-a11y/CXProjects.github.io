@@ -1,0 +1,252 @@
+*,
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: white;
+    color: black;
+    opacity: 90%;
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    background-color: rgb(130, 130, 130);
+    color: black;
+    height: 100px;
+    border: 1px solid black;
+    opacity: 95%;
+    cursor: default;
+}
+
+#h1FileHeader {
+    padding-left: 10px;
+    padding-top: 7px;
+    background: none;
+    color: black;
+    font-size: .8rem;
+    font-family: Arial, monospace;
+    font-weight: 600;
+    font-style: normal;
+    font-variant: normal;
+    opacity: 85%;
+    cursor: default;
+    filter: drop-shadow(0 0 2px
+    black);
+}
+
+#fileInfo {
+    padding-left: 10px;
+    background: none;
+    color: black;
+    font-size: .85rem;
+    font-family: monospace;
+    font-style: 500;
+    font-variant: normal;
+    font-style: normal;
+    cursor: default;
+    opacity: 90%;
+}
+
+nav {
+    margin-top: 7px;
+    margin-bottom: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 10px;
+    background-color: black;
+    color: white;
+    height: 30px;
+    padding-left: 12px;
+    border: none;
+    border-radius: 10px;
+    opacity: 90%;
+    cursor: default;
+}
+
+button {
+    margin-left: 7px;
+    background-color: lightgray;
+    color: black;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 90px;
+    height: 20px;
+    font-size: 1em;
+    font-family: Cambria;
+    font-weight: 500;
+    font-style: normal;
+    font-variant: normal;
+    cursor: pointer;
+    opacity: 90%;
+}
+
+#advancedFile {
+    cursor: not-allowed;
+}
+
+button:hover {
+    transition: 200ms ease-in-out;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+    background-color: white;
+    color: black;
+    opacity: 95%;
+    filter: drop-shadow(0 0 4px
+    white);
+    border: 1px solid transparent;
+}
+
+button:active {
+    background-color: black;
+    color: white;
+    width: 100px;
+}
+
+.h1HtmlCssJs {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0;
+    opacity: 85%;
+    cursor: default;
+}
+
+table, td {
+    border: 2px solid black;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 3px;
+    margin: 12px;
+}
+
+td {
+    background-color: beige;
+    color: black;
+    border: 1px solid white;
+}
+
+td:hover {
+    transition: 200ms ease-in-out;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+    padding: 7px;
+}
+
+table {
+    background-color: black;
+    color: black;
+    cursor: default;
+    opacity: 90%;
+    font-size: 1em;
+    font-family: 'Times New Roman';
+    font-weight: 500;
+    font-style: normal;
+    font-variant: normal;
+    text-align: center;
+}
+
+table:hover {
+    transition: 200ms ease-in-out;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+    filter: drop-shadow(0 0 4px
+    black);
+    opacity: 90%;
+}
+
+.htmlIcons {
+    width: 100px;
+    height: 85px;
+    background: none;
+    opacity: 90%;
+    cursor: default;
+}
+
+.cssIcons {
+    width: 100px;
+    height: 85px;
+    background: none;
+    opacity: 90%;
+    cursor: default;
+}
+
+.jsIcons {
+    width: 85px;
+    height: 80px;
+    background: none;
+    opacity: 90%;
+    cursor: default;
+    margin: 5px;
+    border-radius: 4px;
+}
+
+.cssA {
+    background: none;
+    color: black;
+    cursor: pointer;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.cssA:hover {
+    transition: 200ms ease-in-out;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+    color: blue;
+    opacity: 90%;
+}
+
+.cssA:active {
+    color: aqua;
+    text-decoration: underline;
+    opacity: 90%;
+}
+
+.htmlA {
+    background: none;
+    color: black;
+    cursor: pointer;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.htmlA:hover {
+    transition: 200ms ease-in-out;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+    color: red;
+    opacity: 90%;
+}
+
+.htmlA:active {
+    color: lightcoral;
+    text-decoration: underline;
+    opacity: 90%;
+}
+
+.jsA {
+    background: none;
+    color: black;
+    cursor: pointer;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.jsA:hover {
+    transition: 200ms ease-in-out;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+    color: orange;
+    opacity: 90%;
+}
+
+.jsA:active {
+    color: yellow;
+    text-decoration: underline;
+    opacity: 90%;
+}

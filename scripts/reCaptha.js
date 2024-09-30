@@ -3,7 +3,7 @@
 setTimeout(() => {
     console.log('Sistem reCaptha Berjalan..');
     const people = prompt('Are U Human? (Said YES)');
-    if (prompt.apply = people == "YES") {
+    if (prompt = people == "YES") {
         console.log('They Are Human..');
     }
     else {
